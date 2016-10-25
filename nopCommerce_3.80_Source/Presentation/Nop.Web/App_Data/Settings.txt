@@ -1,0 +1,2 @@
+DataProvider: sqlserver
+DataConnectionString: Data Source=localhost\SQLEXPRESS;Initial Catalog=hungstore;Integrated Security=False;Persist Security Info=False;User ID=sa;Password=02091988

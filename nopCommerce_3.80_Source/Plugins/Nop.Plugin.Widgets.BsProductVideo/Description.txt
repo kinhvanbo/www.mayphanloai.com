@@ -1,0 +1,8 @@
+﻿Group: Widgets
+FriendlyName: Showing Product Video in Product Details Page
+SystemName: BrainStation.ProductVideo
+Version: 1.0
+SupportedVersions: 3.80
+Author: Md. Minul Islam Sohel
+DisplayOrder: 1
+FileName: Nop.Plugin.Widgets.BsProductVideo.dll
