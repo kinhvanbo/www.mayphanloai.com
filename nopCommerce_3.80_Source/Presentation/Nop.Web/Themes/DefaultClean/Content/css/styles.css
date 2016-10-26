@@ -5858,10 +5858,14 @@ pre {
         left: 20px;
         bottom: 20px;
         background: #ddd;
-        padding: 4px;
-        border-radius: 3px;
+        height: 48px;
+        width: 48px;
+        padding: 0;
+        border-radius: 50%;
         box-shadow: 0 4px 5px -1px rgba(0,0,0,0.5);
         display: block;
+        line-height: 48px;
+        text-align: center;
     }
 
         .floatinfo.mobile a {
@@ -5869,9 +5873,9 @@ pre {
         }
 
         .floatinfo.mobile i {
-            background-size: 16px 16px;
-            width: 16px;
-            height: 16px;
+            background-size: 24px 24px;
+            width: 24px;
+            height: 24px;
             filter: grayscale(0.55);
         }
 
