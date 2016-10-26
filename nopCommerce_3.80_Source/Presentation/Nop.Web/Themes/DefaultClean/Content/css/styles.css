@@ -1616,7 +1616,7 @@ label, label + * {
     position: relative;
     width: 100%;
     float: left;
-    margin: 0 0 80px;
+    margin: 0 0 50px;
     text-align: left;
 }
 
