@@ -71,7 +71,7 @@
                         @if (!String.IsNullOrEmpty(Model.ShortDescription))
                         {
                             <div class="short-description">
-                                @Html.Raw(Model.ShortDescription)
+                                @Html.Raw(Model.ShortDescription.Replace("\n","</br>"))
                             </div>
                         }
                         @Html.Widget("productdetails_overview_top", Model.Id)
