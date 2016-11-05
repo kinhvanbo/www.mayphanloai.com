@@ -74,9 +74,6 @@
                                 @Html.Raw(Model.ShortDescription.Replace("\n","</br>"))
                             </div>
                         }
-                        @Html.Widget("productdetails_overview_top", Model.Id)
-                        <!--product reviews-->
-                        @Html.Partial("_ProductReviewOverview", Model.ProductReviewOverview)
                         <!--manufacturers-->
                         @Html.Partial("_ProductManufacturers", Model.ProductManufacturers)
                         <!--availability-->

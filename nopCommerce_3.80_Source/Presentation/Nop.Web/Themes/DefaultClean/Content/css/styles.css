@@ -7078,11 +7078,18 @@ pre {
         margin: auto;
     }
 
-    .header-upper:after {
-        content: "";
-        display: block;
-        clear: both;
+    .header-upper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-bottom: 0;
     }
+
+        .header-upper:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
 
     .header-selectors-wrapper {
         float: left;
@@ -7115,6 +7122,10 @@ pre {
     .header-links li {
         margin: 0 16px;
     }
+
+        .header-links li:last-child {
+            margin-right: 0;
+        }
 
     .header-links a,
     .header-links span {
