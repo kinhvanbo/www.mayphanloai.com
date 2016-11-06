@@ -7578,15 +7578,15 @@ pre {
         margin: 0 10px 10px 0;
     }
 
-    .product-details-page {
+    .product-details-page .title {
+        text-align: left;
+    }
+
+    .full-description {
         width: 600px;
         margin: 0 auto;
         text-align: left;
     }
-
-        .product-details-page .title {
-            text-align: left;
-        }
 
 
     /*** PRODUCT REVIEWS ***/
