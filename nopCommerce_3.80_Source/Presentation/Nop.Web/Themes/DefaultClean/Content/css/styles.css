@@ -1079,8 +1079,6 @@ label, label + * {
 
     .follow-us .social ul {
         margin: 0 0 30px;
-        border-bottom: 1px solid #ddd;
-        padding: 0 0 30px;
         font-size: 0;
     }
 
@@ -7583,7 +7581,7 @@ pre {
     }
 
     .full-description {
-        width: 600px;
+        width: 650px;
         margin: 0 auto;
         text-align: left;
     }
