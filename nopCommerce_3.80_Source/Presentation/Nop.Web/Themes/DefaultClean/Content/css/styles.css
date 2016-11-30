@@ -2330,6 +2330,10 @@ label, label + * {
     line-height: 24px;
 }
 
+    .full-description table td {
+        padding: 5px;
+    }
+
 .product-collateral {
     margin: 0 0 75px;
 }
