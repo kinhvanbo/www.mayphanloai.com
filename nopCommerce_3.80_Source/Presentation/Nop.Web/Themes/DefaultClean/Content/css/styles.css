@@ -7312,13 +7312,11 @@ pre {
 
         .header-menu > ul > li {
             display: inline-block;
-            border-left: 1px solid #ddd;
             padding: 0 15px;
             vertical-align: middle;
         }
 
             .header-menu > ul > li:first-child {
-                border-left: none;
             }
 
             .header-menu > ul > li > a {
