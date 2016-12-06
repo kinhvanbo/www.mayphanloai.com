@@ -650,8 +650,10 @@
     <Content Include="Themes\DefaultClean\Content\images\rss.png" />
     <Content Include="Themes\DefaultClean\Content\images\shipping.png" />
     <Content Include="Themes\DefaultClean\Content\images\shopping-bag.png" />
+    <Content Include="Themes\DefaultClean\Content\images\skype.jpg" />
     <Content Include="Themes\DefaultClean\Content\images\social-sprite.png" />
     <Content Include="Themes\DefaultClean\Content\images\subscribe-button.png" />
+    <Content Include="Themes\DefaultClean\Content\images\tel.jpg" />
     <Content Include="Themes\DefaultClean\Content\images\toggle-black.png" />
     <Content Include="Themes\DefaultClean\Content\images\toggle-gray.png" />
     <Content Include="Themes\DefaultClean\Content\images\toggle-white.png" />
@@ -666,6 +668,7 @@
     <Content Include="Themes\DefaultClean\Content\images\vote-up-selected.png" />
     <Content Include="Themes\DefaultClean\Content\images\watch.png" />
     <Content Include="Themes\DefaultClean\Content\images\wishlist-button.png" />
+    <Content Include="Themes\DefaultClean\Content\images\zalo.jpg" />
     <Content Include="Themes\DefaultClean\preview.jpg" />
     <Content Include="Content\Images\default-avatar.jpg" />
     <Content Include="Content\Images\flags\ad.png" />
