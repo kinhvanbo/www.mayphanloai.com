@@ -87,10 +87,6 @@ a {
     cursor: pointer;
 }
 
-    a img {
-        opacity: 0.99; /*firefox scale bug fix*/
-    }
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -189,7 +185,7 @@ label, label + * {
 }
 
     .page-title h1 {
-        font-size: 30px;
+        font-size: 24px;
         font-weight: normal;
     }
 
@@ -902,7 +898,7 @@ label, label + * {
 .header-lower {
     position: relative;
     z-index: 0;
-    padding: 35px 0;
+    padding: 20px 0;
 }
 
 .header-logo {
@@ -1213,7 +1209,7 @@ label, label + * {
         border-bottom: 1px solid #ddd;
         background: #f6f6f6 url('../images/toggle-gray.png') right 14px no-repeat;
         padding: 12px 30px 12px 10px;
-        font-size: 20px;
+        font-size: 18px;
         color: #5b9b2b;
         cursor: pointer;
     }
@@ -1229,7 +1225,7 @@ label, label + * {
     }
 
     .block .list li {
-        padding: 5px 0 5px 15px;
+        padding: 5px;
     }
 
     .block .list a {
@@ -1241,16 +1237,6 @@ label, label + * {
         -webkit-transition: all 0.1s ease;
         transition: all 0.1s ease;
     }
-
-        .block .list a:before {
-            content: "";
-            position: absolute;
-            top: 12px;
-            left: -15px;
-            width: 5px;
-            height: 5px;
-            background-color: #ddd;
-        }
 
     .block .list .active > a {
         color: #74c039;
@@ -1806,6 +1792,14 @@ label, label + * {
             padding-top: 65%;
         }
 
+        .home-page-category-grid .picture img {
+            border-radius: 50%;
+        }
+
+    .home-page-category-grid .item-box {
+        margin-bottom: 20px;
+    }
+
 .product-grid,
 .product-list {
     margin: 0 0 50px;
@@ -1817,7 +1811,7 @@ label, label + * {
         padding: 0 0 15px;
         font-size: 30px;
         font-weight: normal;
-        color: #444;
+        color: #5b9b2b;
     }
 
         .product-grid .title strong {
@@ -2008,7 +2002,6 @@ label, label + * {
 
     .overview .product-name {
         margin: 0 0 25px;
-        border-bottom: 1px solid #ddd;
         padding: 0 0 10px;
     }
 
@@ -6995,7 +6988,6 @@ pre {
     /*** GLOBAL STYLES ***/
 
     .wrapper-master-wrapper-content {
-        background: url(../images/main-bg.jpg) repeat-x;
     }
 
     .master-wrapper-content {
@@ -7011,6 +7003,9 @@ pre {
     .side-2 {
         float: left;
         width: 25%;
+        background: #f3f3f3;
+        border-radius: 5px;
+        overflow: hidden;
     }
 
     .page {
@@ -7138,8 +7133,9 @@ pre {
 
     .header-links a,
     .header-links span {
-        line-height: 45px;
+        line-height: 34px;
         text-transform: none;
+        color: #999;
     }
 
     #topcartlink {
@@ -7487,24 +7483,25 @@ pre {
         .block .title {
             margin: 0;
             border-bottom: 1px solid #ddd;
-            background: none;
             cursor: auto;
+            background: #74c039;
+            color: #fff;
         }
 
             .block .title strong {
-                font-weight: bold;
             }
 
         .block .listbox {
             display: block;
             border-bottom: none;
+            padding: 10px 5px;
         }
 
         .block a.product-picture {
             display: inline-block;
             position: relative;
             width: 30%;
-            margin: 0 0 0 -15px;
+            margin: 0 0 0 0;
             vertical-align: middle;
         }
 
@@ -7513,7 +7510,7 @@ pre {
         }
 
         .block a.product-picture + a.product-name {
-            width: 70%;
+            width: 65%;
         }
 
             .block a.product-picture + a.product-name:before {
@@ -7525,7 +7522,7 @@ pre {
 
 
     .breadcrumb {
-        margin: -30px 0 20px 0;
+        margin: -30px 0 0px 0;
         background: none;
     }
 
@@ -7537,7 +7534,7 @@ pre {
     .product-details-page .product-grid .item-box,
     .shopping-cart-page .product-grid .item-box {
         width: 24%;
-        margin: 0 0.5% 50px;
+        margin: 0 0.5% 10px;
     }
 
         .home-page .product-grid .item-box:nth-child(3n+1),
@@ -7558,7 +7555,7 @@ pre {
 
     .gallery {
         float: left;
-        width: 46%;
+        width: 35%;
     }
 
         .gallery .picture {
@@ -7567,7 +7564,7 @@ pre {
 
     .overview {
         float: right;
-        width: 52%;
+        width: 63%;
     }
 
     .rental-attributes {
@@ -7593,9 +7590,12 @@ pre {
     }
 
     .full-description {
-        width: 650px;
+        width: 700px;
         margin: 0 auto;
         text-align: left;
+        border-top: 1px dotted #ccc;
+        padding-top: 10px;
+        padding: 10px;
     }
 
 
