@@ -7563,9 +7563,8 @@ pre {
         }
 
     .overview {
-        float: left;
-        width: 50%;
-        padding-left: 30px;
+        float: right;
+        width: 63%;
     }
 
     .rental-attributes {
