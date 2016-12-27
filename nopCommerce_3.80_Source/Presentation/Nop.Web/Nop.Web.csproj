@@ -628,6 +628,7 @@
     <Content Include="Themes\DefaultClean\Content\images\edit.png" />
     <Content Include="Themes\DefaultClean\Content\images\edit_.png" />
     <Content Include="Themes\DefaultClean\Content\images\email-button.png" />
+    <Content Include="Themes\DefaultClean\Content\images\fb-messenger.png" />
     <Content Include="Themes\DefaultClean\Content\images\first.png" />
     <Content Include="Themes\DefaultClean\Content\images\icon-phone.png" />
     <Content Include="Themes\DefaultClean\Content\images\ie_warning.jpg" />
