@@ -5826,58 +5826,9 @@ pre {
 
 
 /*#region Float Info*/
-.floatinfo {
-    position: fixed;
-    left: 10px;
-    bottom: 0;
-    background: #ddd;
-    padding: 3px 7px;
-    border-radius: 3px 3px 0 0;
-    box-shadow: rgba(0,0,0,0.0980392) 0 0 1px 2px;
+.call-for-price-box.float {
     display: none;
-    z-index: 999;
 }
-
-    .floatinfo i {
-        background: url(../images/icon-phone.png) right center no-repeat;
-        background-size: 32px 32px;
-        width: 32px;
-        height: 32px;
-        display: block;
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-    .floatinfo a {
-        font-weight: bold;
-        color: #74c039;
-    }
-
-    .floatinfo.mobile {
-        position: fixed;
-        left: 20px;
-        bottom: 20px;
-        background: #ddd;
-        height: 48px;
-        width: 48px;
-        padding: 0;
-        border-radius: 50%;
-        box-shadow: 0 4px 5px -1px rgba(0,0,0,0.5);
-        display: block;
-        line-height: 48px;
-        text-align: center;
-    }
-
-        .floatinfo.mobile a {
-            font-size: 10px;
-        }
-
-        .floatinfo.mobile i {
-            background-size: 24px 24px;
-            width: 24px;
-            height: 24px;
-            filter: grayscale(0.55);
-        }
 
 /*#endregion*/
 
@@ -7884,6 +7835,13 @@ pre {
         margin: 10px 0;
         vertical-align: middle;
     }
+
+    /*#region Float Info*/
+    .call-for-price-box.float {
+        display: block;
+    }
+
+    /*#endregion*/
 }
 
 
