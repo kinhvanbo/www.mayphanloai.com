@@ -7035,7 +7035,7 @@ pre {
 
     .header-upper {
         position: absolute;
-        top: 0;
+        top: 9px;
         right: 0;
         border-bottom: 0;
     }
@@ -7086,7 +7086,9 @@ pre {
     .header-links span {
         line-height: 34px;
         text-transform: none;
-        color: #999;
+        color: #5b9b2b;
+        font-weight: bold;
+        font-size: 13px;
     }
 
     #topcartlink {
@@ -7231,7 +7233,7 @@ pre {
     .search-box {
         display: table-cell;
         text-align: right;
-        vertical-align: middle;
+        vertical-align: bottom;
     }
 
         .search-box input.search-box-text,
@@ -7281,7 +7283,7 @@ pre {
                 display: block;
                 padding: 5px 10px;
                 line-height: 20px;
-                font-size: 17px; /*reset zeroing*/
+                font-size: 16px; /*reset zeroing*/
                 color: #fff;
                 cursor: pointer;
             }

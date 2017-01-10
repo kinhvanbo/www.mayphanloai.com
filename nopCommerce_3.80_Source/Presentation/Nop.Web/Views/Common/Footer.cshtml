@@ -31,10 +31,10 @@
                 {
                     <li><a href="@Url.RouteUrl("NewsArchive")">@T("News")</a></li>
                 }
-                @if (Model.RecentlyViewedProductsEnabled)
+                @*@if (Model.RecentlyViewedProductsEnabled)
                 {
                     <li><a href="@Url.RouteUrl("RecentlyViewedProducts")">@T("Products.RecentlyViewedProducts")</a></li>
-                }
+                }*@
                 @foreach (var topic in Model.Topics.Where(x => x.IncludeInFooterColumn2).ToList())
                 {
                     <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
@@ -90,7 +90,7 @@
         @if (!Model.HidePoweredByNopCommerce)
         {
             <div class="footer-powered-by">
-                Công ty TNHH Khoa học & Công Nghệ Trung Thụy<br />
+                Công ty TNHH Khoa Học & Công Nghệ Trung Thụy<br />
                 20 Ung Văn Khiêm, Phường 25, Quận Bình Thạnh, TP.CHM - Điện thoại: 0835116669 - Email: mayphanloai@gmail.com
                 @*Would you like to remove the "Powered by nopCommerce" link in the bottom of the footer?
                     Please find more info at http://www.nopcommerce.com/copyrightremoval.aspx*@
