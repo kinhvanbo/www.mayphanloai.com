@@ -26,20 +26,20 @@
     if (seoSettings.OpenGraphMetaTags)
     {
         Html.AddHeadCustomParts("<meta property=\"og:type\" content=\"product\" />");
-        Html.AddHeadCustomParts("<meta property=\"og:title\" content=\"" + Html.Encode(Model.Name) + "\" />");
-        Html.AddHeadCustomParts("<meta property=\"og:description\" content=\"" + Html.Encode(Nop.Core.Html.HtmlHelper.StripTags(Model.MetaDescription)) + "\" />");
+        Html.AddHeadCustomParts("<meta property=\"og:title\" content=\"" + Model.Name + "\" />");
+        Html.AddHeadCustomParts("<meta property=\"og:description\" content=\"" + Nop.Core.Html.HtmlHelper.StripTags(Model.MetaDescription) + "\" />");
         Html.AddHeadCustomParts("<meta property=\"og:image\" content=\"" + Model.DefaultPictureModel.ImageUrl + "\" />");
         Html.AddHeadCustomParts("<meta property=\"og:url\" content=\"" + Request.Url.AbsoluteUri + "\" />");
-        Html.AddHeadCustomParts("<meta property=\"og:site_name\" content=\"" + Html.Encode(Model.CurrentStoreName) + "\" />");
+        Html.AddHeadCustomParts("<meta property=\"og:site_name\" content=\"" + Model.CurrentStoreName + "\" />");
     }
 
     //Twitter META tags
     if (seoSettings.TwitterMetaTags)
     {
         Html.AddHeadCustomParts("<meta property=\"twitter:card\" content=\"summary\" />");
-        Html.AddHeadCustomParts("<meta property=\"twitter:site\" content=\"" + Html.Encode(Model.CurrentStoreName) + "\" />");
-        Html.AddHeadCustomParts("<meta property=\"twitter:title\" content=\"" + Html.Encode(Model.Name) + "\" />");
-        Html.AddHeadCustomParts("<meta property=\"twitter:description\" content=\"" + Html.Encode(Nop.Core.Html.HtmlHelper.StripTags(Model.MetaDescription)) + "\" />");
+        Html.AddHeadCustomParts("<meta property=\"twitter:site\" content=\"" + Model.CurrentStoreName + "\" />");
+        Html.AddHeadCustomParts("<meta property=\"twitter:title\" content=\"" + Model.Name + "\" />");
+        Html.AddHeadCustomParts("<meta property=\"twitter:description\" content=\"" + Nop.Core.Html.HtmlHelper.StripTags(Model.MetaDescription) + "\" />");
         Html.AddHeadCustomParts("<meta property=\"twitter:image\" content=\"" + Model.DefaultPictureModel.ImageUrl + "\" />");
         Html.AddHeadCustomParts("<meta property=\"twitter:url\" content=\"" + Request.Url.AbsoluteUri + "\" />");
     }
@@ -92,7 +92,7 @@
                     @if (!String.IsNullOrEmpty(Model.FullDescription))
                     {
                         <div class="full-description" itemprop="description">
-                            @Html.Raw(Model.FullDescription)
+                            @Html.Raw(System.Text.Encoding.UTF8.GetString(System.Text.Encoding.GetEncoding("iso-8859-1").GetBytes(Model.FullDescription)))
                         </div>
                     }
                 </div>

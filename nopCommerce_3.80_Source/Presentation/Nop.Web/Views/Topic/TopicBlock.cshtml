@@ -58,7 +58,7 @@
     </div>
     <div class="topic-block" id="ph-topic-@Model.Id">
         <div class="topic-block-title" id="ph-title-@Model.Id">
-            <h2>@Model.Title</h2>
+            <h2>@Html.Raw(Model.Title)</h2>
         </div>
         <div class="topic-block-body">
             @Html.Raw(Model.Body)
@@ -71,7 +71,7 @@ else
         @if (!String.IsNullOrEmpty(Model.Title))
         {
             <div class="topic-block-title">
-                <h2>@Model.Title</h2>
+                <h2>@Html.Raw(Model.Title)</h2>
             </div>
         }
         <div class="topic-block-body">

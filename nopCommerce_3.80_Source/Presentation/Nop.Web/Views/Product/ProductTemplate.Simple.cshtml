@@ -65,7 +65,7 @@
                         @Html.Partial("_Discontinued", Model)
                         <div class="product-name">
                             <h1 itemprop="name">
-                                @Model.Name
+                                @Html.Raw(Model.Name)
                             </h1>
                         </div>
                         @if (!String.IsNullOrEmpty(Model.ShortDescription))
