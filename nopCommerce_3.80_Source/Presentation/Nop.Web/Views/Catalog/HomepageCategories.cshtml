@@ -15,7 +15,7 @@
                             </a>
                         </h2>
                         <div class="picture">
-                            <a href="@Url.RouteUrl("Category", new { SeName = item.SeName })" title="@item.PictureModel.Title">
+                            <a href="@Url.RouteUrl("Category", new { SeName = item.SeName })" title="@Html.Raw(item.PictureModel.Title)">
                                 <img alt="@Html.Raw(item.PictureModel.AlternateText)" src="@item.PictureModel.ImageUrl" title="@Html.Raw(item.PictureModel.Title)" />
                             </a>
                         </div>

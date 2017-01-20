@@ -13,14 +13,15 @@
 }
 <div class="page news-item-page">
     <div class="page-title">
-        <h1>@Model.Title</h1>
+        <h1>@Html.Raw(Model.Title)</h1>
     </div>
     <div class="page-body">
         <div class="news-date">
-            @Model.CreatedOn.ToString("D")
+            @Html.Raw(Model.CreatedOn.ToString("D"))
         </div>
         @Html.Widget("newsitem_page_before_body", Model.Id)
         <div class="news-body">
+            @*@Html.Raw(System.Text.Encoding.UTF8.GetString(System.Text.Encoding.GetEncoding("iso-8859-1").GetBytes(Model.Full)))*@
             @Html.Raw(Model.Full)
         </div>
         @Html.Widget("newsitem_page_before_comments", Model.Id)

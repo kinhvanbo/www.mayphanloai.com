@@ -11,8 +11,8 @@
             {
                 <div class="news-item">
                     <div class="news-head">
-                        <a class="news-title" href="@Url.RouteUrl("NewsItem", new { SeName = item.SeName })">@item.Title</a>
-                        <span class="news-date">-@item.CreatedOn.ToString("D")</span>
+                        <a class="news-title" href="@Url.RouteUrl("NewsItem", new { SeName = item.SeName })">@Html.Raw(item.Title)</a>
+                        <span class="news-date">-@Html.Raw(item.CreatedOn.ToString("D"))</span>
                     </div>
                     <div class="news-body">
                         @Html.Raw(item.Short)

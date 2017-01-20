@@ -92,7 +92,8 @@
                     @if (!String.IsNullOrEmpty(Model.FullDescription))
                     {
                         <div class="full-description" itemprop="description">
-                            @Html.Raw(System.Text.Encoding.UTF8.GetString(System.Text.Encoding.GetEncoding("iso-8859-1").GetBytes(Model.FullDescription)))
+                            @*@Html.Raw(System.Text.Encoding.UTF8.GetString(System.Text.Encoding.GetEncoding("iso-8859-1").GetBytes(Model.FullDescription)))*@
+                            @Html.Raw(Model.FullDescription)
                         </div>
                     }
                 </div>
